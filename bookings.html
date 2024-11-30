@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Payment | KappTravel</title>
+    <link rel="stylesheet" href="bookings.css">
+    <link rel="icon" href="img/money.png" type="image/png">
+</head>
+<body>
+
+    <header>
+        <h1>KappTravel Booking</h1>
+        <p>Register and make secure payments for your trips.</p>
+    </header>
+
+    <main>
+        <form id="bookingForm">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+
+            <div class="form-group">
+                <label for="destination">Destination</label>
+                <select id="destination" name="destination" required>
+                    <option value="rome">Rome, Italy</option>
+                    <option value="london">London, England</option>
+                    <option value="tropea">Tropea, Italy</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="payment">Payment Method</label>
+                <select id="payment" name="payment" required>
+                    <option value="credit-card">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="bank-transfer">Bank Transfer</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="card-details">Card Details</label>
+                <input type="text" id="card-details" name="card-details" placeholder="XXXX-XXXX-XXXX-XXXX">
+            </div>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 KappTravel. All rights reserved.</p>
+    </footer>
+
+    <script src="bookings.js"></script>
+</body>
+</html>
